@@ -669,16 +669,53 @@ class Ui_MainWindow(object):
                 t4 = self.L14.text()
                 t5 = self.L15.text()
                 for i in range (0,5):
+                    L11been = self.L11.styleSheet()
+                    L12been = self.L12.styleSheet()
+                    L13been = self.L13.styleSheet()
+                    L14been = self.L14.styleSheet()
+                    L15been = self.L15.styleSheet()
                     if self.currentAnswer[i] == t1[3:]:
                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                        if i==1 and L11been == "":
+                            self.L11.setStyleSheet("background-color: green;")
+                        elif i==1 and L11been == "":
+                            self.L11.setStyleSheet("background-color: yellow;")
                     if self.currentAnswer[i] == t2[3:]:
                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                        if i==2 and L12been == True:
+                            self.L12.setStyleSheet("background-color: green;")
+                            L11been == False
+                        elif i==2 and L12been == False:
+                            print("Защита")
+                        else:
+                            self.L12.setStyleSheet("background-color: yellow;")
                     if self.currentAnswer[i] == t3[3:]:
                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                        if i==3 and L13been == True:
+                            self.L13.setStyleSheet("background-color: green;")
+                            L13been == False
+                        elif i==3 and L13been == False:
+                            print("Защита")
+                        else:
+                            self.L13.setStyleSheet("background-color: yellow;")
                     if self.currentAnswer[i] == t4[3:]:
                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                        if i==4 and L14been == True:
+                            self.L14.setStyleSheet("background-color: green;")
+                            L14been == False
+                        elif i==4 and L14been == False:
+                            print("Защита")
+                        else:
+                            self.L14.setStyleSheet("background-color: yellow;")
                     if self.currentAnswer[i] == t5[3:]:
                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                        if i==5 and L15been == True:
+                            self.L15.setStyleSheet("background-color: green;")
+                            L15been == False
+                        elif i==5 and L15been == False:
+                            print("Защита")
+                        else:
+                            self.L15.setStyleSheet("background-color: yellow;")
         
         def ButtonClicked(letter):
             Space = " "*3
@@ -777,7 +814,8 @@ class Ui_MainWindow(object):
 
 while(True):
     print("Введите слово из 5 букв")
-    a = input()
+    #a = input()
+    a = "абвгд"
     if len(a) == 5:
         break
     else:
