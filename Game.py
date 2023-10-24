@@ -661,6 +661,24 @@ class Ui_MainWindow(object):
         self.But24.setObjectName("But24")
         self.keyboardLayout.addWidget(self.But24, 2, 1, 1, 1)
         
+        def ProgressGame(a):
+            if a == 1:
+                t1 = self.L11.text()
+                t2 = self.L12.text()
+                t3 = self.L13.text()
+                t4 = self.L14.text()
+                t5 = self.L15.text()
+                for i in range (0,5):
+                    if self.currentAnswer[i] == t1[3:]:
+                        print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                    if self.currentAnswer[i] == t2[3:]:
+                        print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                    if self.currentAnswer[i] == t3[3:]:
+                        print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                    if self.currentAnswer[i] == t4[3:]:
+                        print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                    if self.currentAnswer[i] == t5[3:]:
+                        print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
         
         def ButtonClicked(letter):
             Space = " "*3
@@ -674,41 +692,42 @@ class Ui_MainWindow(object):
                 self.L14.setText(Space + letter)
             elif  self.L15.text() == "":
                 self.L15.setText(Space + letter)
+                ProgressGame(1)
+                
             
             
-            
-        self.But1.clicked.connect(lambda: ButtonClicked("Й"))
-        self.But2.clicked.connect(lambda: ButtonClicked("Ц"))
-        self.But3.clicked.connect(lambda: ButtonClicked("У"))
-        self.But4.clicked.connect(lambda: ButtonClicked("К"))
-        self.But5.clicked.connect(lambda: ButtonClicked("Е"))
-        self.But6.clicked.connect(lambda: ButtonClicked("Н"))
-        self.But7.clicked.connect(lambda: ButtonClicked("Г"))
-        self.But8.clicked.connect(lambda: ButtonClicked("Ш"))
-        self.But9.clicked.connect(lambda: ButtonClicked("Щ"))
-        self.But10.clicked.connect(lambda: ButtonClicked("З"))
-        self.But11.clicked.connect(lambda: ButtonClicked("Х"))
-        self.But12.clicked.connect(lambda: ButtonClicked("Ъ"))
-        self.But13.clicked.connect(lambda: ButtonClicked("Ф"))
-        self.But14.clicked.connect(lambda: ButtonClicked("Ы"))
-        self.But15.clicked.connect(lambda: ButtonClicked("В"))
-        self.But16.clicked.connect(lambda: ButtonClicked("А"))
-        self.But17.clicked.connect(lambda: ButtonClicked("П"))
-        self.But18.clicked.connect(lambda: ButtonClicked("Р"))
-        self.But19.clicked.connect(lambda: ButtonClicked("О"))
-        self.But20.clicked.connect(lambda: ButtonClicked("Л"))
-        self.But21.clicked.connect(lambda: ButtonClicked("Д"))
-        self.But22.clicked.connect(lambda: ButtonClicked("Ж"))
-        self.But23.clicked.connect(lambda: ButtonClicked("Э"))
-        self.But24.clicked.connect(lambda: ButtonClicked("Я"))
-        self.But25.clicked.connect(lambda: ButtonClicked("Ч"))
-        self.But26.clicked.connect(lambda: ButtonClicked("С"))
-        self.But27.clicked.connect(lambda: ButtonClicked("М"))
-        self.But28.clicked.connect(lambda: ButtonClicked("И"))
-        self.But29.clicked.connect(lambda: ButtonClicked("Т"))
-        self.But30.clicked.connect(lambda: ButtonClicked("Ь"))
-        self.But31.clicked.connect(lambda: ButtonClicked("Б"))
-        self.But32.clicked.connect(lambda: ButtonClicked("Ю"))
+        self.But1.clicked.connect(lambda: ButtonClicked("й"))
+        self.But2.clicked.connect(lambda: ButtonClicked("ц"))
+        self.But3.clicked.connect(lambda: ButtonClicked("у"))
+        self.But4.clicked.connect(lambda: ButtonClicked("к"))
+        self.But5.clicked.connect(lambda: ButtonClicked("е"))
+        self.But6.clicked.connect(lambda: ButtonClicked("н"))
+        self.But7.clicked.connect(lambda: ButtonClicked("г"))
+        self.But8.clicked.connect(lambda: ButtonClicked("ш"))
+        self.But9.clicked.connect(lambda: ButtonClicked("щ"))
+        self.But10.clicked.connect(lambda: ButtonClicked("з"))
+        self.But11.clicked.connect(lambda: ButtonClicked("х"))
+        self.But12.clicked.connect(lambda: ButtonClicked("ъ"))
+        self.But13.clicked.connect(lambda: ButtonClicked("ф"))
+        self.But14.clicked.connect(lambda: ButtonClicked("ы"))
+        self.But15.clicked.connect(lambda: ButtonClicked("в"))
+        self.But16.clicked.connect(lambda: ButtonClicked("а"))
+        self.But17.clicked.connect(lambda: ButtonClicked("п"))
+        self.But18.clicked.connect(lambda: ButtonClicked("р"))
+        self.But19.clicked.connect(lambda: ButtonClicked("о"))
+        self.But20.clicked.connect(lambda: ButtonClicked("л"))
+        self.But21.clicked.connect(lambda: ButtonClicked("д"))
+        self.But22.clicked.connect(lambda: ButtonClicked("ж"))
+        self.But23.clicked.connect(lambda: ButtonClicked("э"))
+        self.But24.clicked.connect(lambda: ButtonClicked("я"))
+        self.But25.clicked.connect(lambda: ButtonClicked("ч"))
+        self.But26.clicked.connect(lambda: ButtonClicked("с"))
+        self.But27.clicked.connect(lambda: ButtonClicked("м"))
+        self.But28.clicked.connect(lambda: ButtonClicked("и"))
+        self.But29.clicked.connect(lambda: ButtonClicked("т"))
+        self.But30.clicked.connect(lambda: ButtonClicked("ь"))
+        self.But31.clicked.connect(lambda: ButtonClicked("б"))
+        self.But32.clicked.connect(lambda: ButtonClicked("ю"))
 
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -752,11 +771,22 @@ class Ui_MainWindow(object):
         self.But25.setText(_translate("MainWindow", "Ч"))
         self.But24.setText(_translate("MainWindow", "Я"))
         
+    def SetAnswer(self,answ):
+        self.currentAnswer = answ
 
 
+while(True):
+    print("Введите слово из 5 букв")
+    a = input()
+    if len(a) == 5:
+        break
+    else:
+        print("Ошибка, повторите снова!")
+        
 app = QtWidgets.QApplication(sys.argv)
 MainWindow = QtWidgets.QMainWindow()
 ui = Ui_MainWindow()
+ui.SetAnswer(a)
 ui.setupUi(MainWindow)
 MainWindow.show()
 sys.exit(app.exec())
