@@ -1,6 +1,4 @@
 # -*- coding: cp1251 -*-
-
-
 import sys
 from PyQt6 import QtCore, QtGui, QtWidgets
 from PyQt6.QtGui import QFont
@@ -668,291 +666,354 @@ class Ui_MainWindow(object):
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L11.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==0 and not found:
+                         elif i!=0 and not found:
                               self.L11.setStyleSheet("background-color: yellow;")
             if num == 12:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L12.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==1 and not found:
+                         elif i!=1 and not found:
                               self.L12.setStyleSheet("background-color: yellow;")
             if num == 13:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L13.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==2 and not found:
+                         elif i!=2 and not found:
                               self.L13.setStyleSheet("background-color: yellow;")
             if num == 14:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L14.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==3 and not found:
+                         elif i!=3 and not found:
                               self.L14.setStyleSheet("background-color: yellow;")
             if num == 15:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L15.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==4 and not found:
+                         elif i!=4 and not found:
                               self.L15.setStyleSheet("background-color: yellow;")
             if num == 21:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L21.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==0 and not found:
+                         elif i!=0 and not found:
                               self.L21.setStyleSheet("background-color: yellow;")
             if num == 22:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L22.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==1 and not found:
+                         elif i!=1 and not found:
                               self.L22.setStyleSheet("background-color: yellow;")
             if num == 23:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L23.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==2 and not found:
+                         elif i!=2 and not found:
                               self.L23.setStyleSheet("background-color: yellow;")
             if num == 24:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L24.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==3 and not found:
+                         elif i!=3 and not found:
                               self.L24.setStyleSheet("background-color: yellow;")
             if num == 25:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L25.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==4 and not found:
+                         elif i!=4 and not found:
                               self.L25.setStyleSheet("background-color: yellow;")
             if num == 31:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L31.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==0 and not found:
+                         elif i!=0 and not found:
                               self.L31.setStyleSheet("background-color: yellow;")
             if num == 32:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L32.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==1 and not found:
+                         elif i!=1 and not found:
                               self.L32.setStyleSheet("background-color: yellow;")
             if num == 33:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L33.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==2 and not found:
+                         elif i!=2 and not found:
                               self.L33.setStyleSheet("background-color: yellow;")
             if num == 34:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L34.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==3 and not found:
+                         elif i!=3 and not found:
                               self.L34.setStyleSheet("background-color: yellow;")
             if num == 35:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L35.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==4 and not found:
+                         elif i!=4 and not found:
                               self.L35.setStyleSheet("background-color: yellow;")
             if num == 41:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L41.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==0 and not found:
+                         elif i!=0 and not found:
                               self.L41.setStyleSheet("background-color: yellow;")
             if num == 42:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L42.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==1 and not found:
+                         elif i!=1 and not found:
                               self.L42.setStyleSheet("background-color: yellow;")
             if num == 43:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L43.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==2 and not found:
+                         elif i!=2 and not found:
                               self.L43.setStyleSheet("background-color: yellow;")
             if num == 44:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L44.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==3 and not found:
+                         elif i!=3 and not found:
                               self.L44.setStyleSheet("background-color: yellow;")
             if num == 45:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L45.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==4 and not found:
+                         elif i!=4 and not found:
                               self.L45.setStyleSheet("background-color: yellow;")
             if num == 51:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L51.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==0 and not found:
+                         elif i!=0 and not found:
                               self.L51.setStyleSheet("background-color: yellow;")
             if num == 52:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L52.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==1 and not found:
+                         elif i!=1 and not found:
                               self.L52.setStyleSheet("background-color: yellow;")
             if num == 53:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L53.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==2 and not found:
+                         elif i!=2 and not found:
                               self.L53.setStyleSheet("background-color: yellow;")
             if num == 54:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L54.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==3 and not found:
+                         elif i!=3 and not found:
                               self.L54.setStyleSheet("background-color: yellow;")
             if num == 55:
                 found = False
                 for i in range (0,5):
                      if self.currentAnswer[i] == tt:
-                         print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
+                         #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L55.setStyleSheet("background-color: green;")
                               found = True
-                         elif i==4 and not found:
+                         elif i!=4 and not found:
                               self.L55.setStyleSheet("background-color: yellow;")
         
         def ButtonClicked(letter):
             Space = " "*3
-            if self.L11.text() == "":
-                self.L11.setText(Space + letter)
-                check = True
-            elif  self.L12.text() == "":
-                self.L12.setText(Space + letter)
-            elif  self.L13.text() == "":
-                self.L13.setText(Space + letter)
-            elif  self.L14.text() == "":
-                self.L14.setText(Space + letter)
-            elif  self.L15.text() == "":
-                self.L15.setText(Space + letter)
-            else:
-                ProgressGame(11,self.L11.text())
-                ProgressGame(12,self.L12.text())
-                ProgressGame(13,self.L13.text())
-                ProgressGame(14,self.L14.text())
-                ProgressGame(15,self.L15.text()) 
+            if self.lineSelector == 0:
+                if self.L11.text() == "":
+                    self.L11.setText(Space + letter)
+                    check = True
+                elif  self.L12.text() == "":
+                    self.L12.setText(Space + letter)
+                elif  self.L13.text() == "":
+                    self.L13.setText(Space + letter)
+                elif  self.L14.text() == "":
+                    self.L14.setText(Space + letter)
+                elif  self.L15.text() == "":
+                    self.L15.setText(Space + letter)
+                    ProgressGame(11,self.L11.text())
+                    ProgressGame(12,self.L12.text())
+                    ProgressGame(13,self.L13.text())
+                    ProgressGame(14,self.L14.text())
+                    ProgressGame(15,self.L15.text()) 
+                    self.lineSelector += 1
                 
-            if self.L21.text() == "" and check == True:
-                self.L21.setText(Space + letter)
-            elif  self.L22.text() == "":
-                self.L22.setText(Space + letter)
-            elif  self.L23.text() == "":
-                self.L23.setText(Space + letter)
-            elif  self.L24.text() == "":
-                self.L24.setText(Space + letter)
-            elif  self.L25.text() == "":
-                self.L25.setText(Space + letter)
-                ProgressGame(21,self.L21.text())
-                ProgressGame(22,self.L22.text())
-                ProgressGame(23,self.L23.text())
-                ProgressGame(24,self.L24.text())
-                ProgressGame(25,self.L25.text())
+            elif self.lineSelector == 1:
+                if self.L21.text() == "":
+                    self.L21.setText(Space + letter)
+                elif  self.L22.text() == "":
+                    self.L22.setText(Space + letter)
+                elif  self.L23.text() == "":
+                    self.L23.setText(Space + letter)
+                elif  self.L24.text() == "":
+                    self.L24.setText(Space + letter)
+                elif  self.L25.text() == "":
+                    self.L25.setText(Space + letter)
+                    ProgressGame(21,self.L21.text())
+                    ProgressGame(22,self.L22.text())
+                    ProgressGame(23,self.L23.text())
+                    ProgressGame(24,self.L24.text())
+                    ProgressGame(25,self.L25.text())
+                    self.lineSelector += 1
+                    
+            elif self.lineSelector == 2:
+                if self.L31.text() == "":
+                    self.L31.setText(Space + letter)
+                elif  self.L32.text() == "":
+                    self.L32.setText(Space + letter)
+                elif  self.L33.text() == "":
+                    self.L33.setText(Space + letter)
+                elif  self.L34.text() == "":
+                    self.L34.setText(Space + letter)
+                elif  self.L35.text() == "":
+                    self.L35.setText(Space + letter)
+                    ProgressGame(31,self.L31.text())
+                    ProgressGame(32,self.L32.text())
+                    ProgressGame(33,self.L33.text())
+                    ProgressGame(34,self.L34.text())
+                    ProgressGame(35,self.L35.text())
+                    self.lineSelector += 1
                 
+            elif self.lineSelector == 3:
+                if self.L41.text() == "":
+                    self.L41.setText(Space + letter)
+                elif  self.L42.text() == "":
+                    self.L42.setText(Space + letter)
+                elif  self.L43.text() == "":
+                    self.L43.setText(Space + letter)
+                elif  self.L44.text() == "":
+                    self.L44.setText(Space + letter)
+                elif  self.L45.text() == "":
+                    self.L45.setText(Space + letter)
+                    ProgressGame(41,self.L41.text())
+                    ProgressGame(42,self.L42.text())
+                    ProgressGame(43,self.L43.text())
+                    ProgressGame(44,self.L44.text())
+                    ProgressGame(45,self.L45.text())
+                    self.lineSelector += 1
+                    
+            elif self.lineSelector == 4:
+                if self.L51.text() == "":
+                    self.L51.setText(Space + letter)
+                elif  self.L52.text() == "":
+                    self.L52.setText(Space + letter)
+                elif  self.L53.text() == "":
+                    self.L53.setText(Space + letter)
+                elif  self.L54.text() == "":
+                    self.L54.setText(Space + letter)
+                elif  self.L55.text() == "":
+                    self.L55.setText(Space + letter)
+                    ProgressGame(51,self.L51.text())
+                    ProgressGame(52,self.L52.text())
+                    ProgressGame(53,self.L53.text())
+                    ProgressGame(54,self.L54.text())
+                    ProgressGame(55,self.L55.text())
+                    result()
                 
-            
+        def result():
+            Space = " "*3    
+            self.A1.setText(Space + self.currentAnswer[0])
+            self.A2.setText(Space + self.currentAnswer[1])
+            self.A3.setText(Space + self.currentAnswer[2])
+            self.A4.setText(Space + self.currentAnswer[3])
+            self.A5.setText(Space + self.currentAnswer[4])
+                
             
         self.But1.clicked.connect(lambda: ButtonClicked("й"))
         self.But2.clicked.connect(lambda: ButtonClicked("ц"))
@@ -995,7 +1056,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Word Game (RUS)"))
         self.But14.setText(_translate("MainWindow", "Ы"))
         self.But18.setText(_translate("MainWindow", "Р"))
         self.But17.setText(_translate("MainWindow", "П"))
@@ -1031,12 +1092,13 @@ class Ui_MainWindow(object):
         
     def SetAnswer(self,answ):
         self.currentAnswer = answ
+        self.lineSelector = 0
 
 
 while(True):
-    #print("Введите слово из 5 букв")
-    #a = input()
-    a = "абвгд"
+    print("Введите слово из 5 букв")
+    a = input()
+    #a = "абвгд"
     if len(a) == 5:
         break
     else:
