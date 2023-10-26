@@ -549,11 +549,19 @@ class Ui_MainWindow(object):
         self.L54.setFont(self.font)
         self.L55.setFont(self.font)
         
+        self.A1.setStyleSheet("background-color: black;")
+        self.A2.setStyleSheet("background-color: black;")
+        self.A3.setStyleSheet("background-color: black;")
+        self.A4.setStyleSheet("background-color: black;")
+        self.A5.setStyleSheet("background-color: black;")
+        
         self.A1.setFont(self.font)
         self.A2.setFont(self.font)
         self.A3.setFont(self.font)
         self.A4.setFont(self.font)
         self.A5.setFont(self.font)
+        
+        
         
         self.AnswerLayout.addWidget(self.line_75, 2, 0, 1, 1)
         self.gridLayoutWidget_3 = QtWidgets.QWidget(parent=self.centralwidget)
@@ -661,7 +669,7 @@ class Ui_MainWindow(object):
         
         def ProgressGame(num, label):
             tt = label[3]
-            #print(tt)
+            Space = " "*3
             if num == 11:
                 found = False
                 for i in range (0,5):
@@ -669,6 +677,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L11.setStyleSheet("background-color: green;")
+                              self.A1.setStyleSheet("")
+                              self.A1.setText(Space + tt)
                               found = True
                          elif i!=0 and not found:
                               self.L11.setStyleSheet("background-color: yellow;")
@@ -679,6 +689,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L12.setStyleSheet("background-color: green;")
+                              self.A2.setStyleSheet("")
+                              self.A2.setText(Space + tt)
                               found = True
                          elif i!=1 and not found:
                               self.L12.setStyleSheet("background-color: yellow;")
@@ -689,6 +701,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L13.setStyleSheet("background-color: green;")
+                              self.A3.setStyleSheet("")
+                              self.A3.setText(Space + tt)
                               found = True
                          elif i!=2 and not found:
                               self.L13.setStyleSheet("background-color: yellow;")
@@ -699,6 +713,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L14.setStyleSheet("background-color: green;")
+                              self.A4.setStyleSheet("")
+                              self.A4.setText(Space + tt)
                               found = True
                          elif i!=3 and not found:
                               self.L14.setStyleSheet("background-color: yellow;")
@@ -709,6 +725,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L15.setStyleSheet("background-color: green;")
+                              self.A5.setStyleSheet("")
+                              self.A5.setText(Space + tt)
                               found = True
                          elif i!=4 and not found:
                               self.L15.setStyleSheet("background-color: yellow;")
@@ -719,6 +737,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L21.setStyleSheet("background-color: green;")
+                              self.A1.setStyleSheet("")
+                              self.A1.setText(Space + tt)
                               found = True
                          elif i!=0 and not found:
                               self.L21.setStyleSheet("background-color: yellow;")
@@ -729,6 +749,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L22.setStyleSheet("background-color: green;")
+                              self.A2.setStyleSheet("")
+                              self.A2.setText(Space + tt)
                               found = True
                          elif i!=1 and not found:
                               self.L22.setStyleSheet("background-color: yellow;")
@@ -739,6 +761,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L23.setStyleSheet("background-color: green;")
+                              self.A3.setStyleSheet("")
+                              self.A3.setText(Space + tt)
                               found = True
                          elif i!=2 and not found:
                               self.L23.setStyleSheet("background-color: yellow;")
@@ -749,6 +773,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L24.setStyleSheet("background-color: green;")
+                              self.A4.setStyleSheet("")
+                              self.A4.setText(Space + tt)
                               found = True
                          elif i!=3 and not found:
                               self.L24.setStyleSheet("background-color: yellow;")
@@ -759,6 +785,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L25.setStyleSheet("background-color: green;")
+                              self.A5.setStyleSheet("")
+                              self.A5.setText(Space + tt)
                               found = True
                          elif i!=4 and not found:
                               self.L25.setStyleSheet("background-color: yellow;")
@@ -769,6 +797,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L31.setStyleSheet("background-color: green;")
+                              self.A1.setStyleSheet("")
+                              self.A1.setText(Space + tt)
                               found = True
                          elif i!=0 and not found:
                               self.L31.setStyleSheet("background-color: yellow;")
@@ -779,6 +809,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L32.setStyleSheet("background-color: green;")
+                              self.A2.setStyleSheet("")
+                              self.A2.setText(Space + tt)
                               found = True
                          elif i!=1 and not found:
                               self.L32.setStyleSheet("background-color: yellow;")
@@ -789,6 +821,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L33.setStyleSheet("background-color: green;")
+                              self.A3.setStyleSheet("")
+                              self.A3.setText(Space + tt)
                               found = True
                          elif i!=2 and not found:
                               self.L33.setStyleSheet("background-color: yellow;")
@@ -799,6 +833,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L34.setStyleSheet("background-color: green;")
+                              self.A4.setStyleSheet("")
+                              self.A4.setText(Space + tt)
                               found = True
                          elif i!=3 and not found:
                               self.L34.setStyleSheet("background-color: yellow;")
@@ -809,6 +845,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L35.setStyleSheet("background-color: green;")
+                              self.A5.setStyleSheet("")
+                              self.A5.setText(Space + tt)
                               found = True
                          elif i!=4 and not found:
                               self.L35.setStyleSheet("background-color: yellow;")
@@ -819,6 +857,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L41.setStyleSheet("background-color: green;")
+                              self.A1.setStyleSheet("")
+                              self.A1.setText(Space + tt)
                               found = True
                          elif i!=0 and not found:
                               self.L41.setStyleSheet("background-color: yellow;")
@@ -829,6 +869,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L42.setStyleSheet("background-color: green;")
+                              self.A2.setStyleSheet("")
+                              self.A2.setText(Space + tt)
                               found = True
                          elif i!=1 and not found:
                               self.L42.setStyleSheet("background-color: yellow;")
@@ -839,6 +881,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L43.setStyleSheet("background-color: green;")
+                              self.A3.setStyleSheet("")
+                              self.A3.setText(Space + tt)
                               found = True
                          elif i!=2 and not found:
                               self.L43.setStyleSheet("background-color: yellow;")
@@ -849,6 +893,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L44.setStyleSheet("background-color: green;")
+                              self.A4.setStyleSheet("")
+                              self.A4.setText(Space + tt)
                               found = True
                          elif i!=3 and not found:
                               self.L44.setStyleSheet("background-color: yellow;")
@@ -859,6 +905,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L45.setStyleSheet("background-color: green;")
+                              self.A5.setStyleSheet("")
+                              self.A5.setText(Space + tt)
                               found = True
                          elif i!=4 and not found:
                               self.L45.setStyleSheet("background-color: yellow;")
@@ -869,6 +917,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==0 and found == False:
                               self.L51.setStyleSheet("background-color: green;")
+                              self.A1.setStyleSheet("")
+                              self.A1.setText(Space + tt)
                               found = True
                          elif i!=0 and not found:
                               self.L51.setStyleSheet("background-color: yellow;")
@@ -879,6 +929,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==1 and found == False:
                               self.L52.setStyleSheet("background-color: green;")
+                              self.A2.setStyleSheet("")
+                              self.A2.setText(Space + tt)
                               found = True
                          elif i!=1 and not found:
                               self.L52.setStyleSheet("background-color: yellow;")
@@ -889,6 +941,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==2 and found == False:
                               self.L53.setStyleSheet("background-color: green;")
+                              self.A3.setStyleSheet("")
+                              self.A3.setText(Space + tt)
                               found = True
                          elif i!=2 and not found:
                               self.L53.setStyleSheet("background-color: yellow;")
@@ -899,6 +953,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==3 and found == False:
                               self.L54.setStyleSheet("background-color: green;")
+                              self.A4.setStyleSheet("")
+                              self.A4.setText(Space + tt)
                               found = True
                          elif i!=3 and not found:
                               self.L54.setStyleSheet("background-color: yellow;")
@@ -909,6 +965,8 @@ class Ui_MainWindow(object):
                          #print("Буква " + self.currentAnswer[i] + " соответствует букве из " + str(i) + " колонки")
                          if i==4 and found == False:
                               self.L55.setStyleSheet("background-color: green;")
+                              self.A5.setStyleSheet("")
+                              self.A5.setText(Space + tt)
                               found = True
                          elif i!=4 and not found:
                               self.L55.setStyleSheet("background-color: yellow;")
@@ -1008,6 +1066,11 @@ class Ui_MainWindow(object):
                 
         def result():
             Space = " "*3    
+            self.A1.setStyleSheet("")
+            self.A2.setStyleSheet("")
+            self.A3.setStyleSheet("")
+            self.A4.setStyleSheet("")
+            self.A5.setStyleSheet("")
             self.A1.setText(Space + self.currentAnswer[0])
             self.A2.setText(Space + self.currentAnswer[1])
             self.A3.setText(Space + self.currentAnswer[2])
